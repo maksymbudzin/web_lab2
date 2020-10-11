@@ -56,6 +56,22 @@ body {
     color: #202336
 }
 
+.location, .date, .activity, .grade{
+    animation: change-background 4s linear infinite alternate;
+}
+
+@keyframes change-background {
+    0% {
+        background: blue;
+    }
+    50% {
+        background: orange;
+    }
+    100% {
+        background: green;
+    }
+}
+
 .login, .register, .form-options button, .main-button, .guides-button {
     border: 1px solid #FB8F1D;
     border-radius: 8px;
